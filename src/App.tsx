@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { debounce } from './utils/debounce';
 
 function App() {
+
+
+  const logMessage = (msg: string) => console.log(msg);
+
+  const debouncedLog = debounce(logMessage, 1000);
+  
+  debouncedLog("Привет!");
+  setTimeout(() => debouncedLog("Как дела?"), 500);
+  setTimeout(() => debouncedLog("Прошла 1 секунда"), 1500);
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        Hello
+        <img src="/assets/logo192.png" alt="logo" />
     </div>
   );
 }
