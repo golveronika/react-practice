@@ -1,12 +1,12 @@
 import React from 'react';
+import HomePage from './page/Home'
 
 function App() {
 
 
   return (
     <div className="App">
-        Hello
-        <img src="/assets/logo192.png" alt="logo" />
+        <HomePage />
     </div>
   );
 }

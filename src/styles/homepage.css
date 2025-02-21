@@ -1,0 +1,16 @@
+.page-wrapper {
+    padding: 40px;
+    .line-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .line-item {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            .item-user {
+                font-weight: bold;
+            }
+        }
+    }
+}
