@@ -1,0 +1,84 @@
+
+
+.customer-form-item {
+    &:not(:first-child) {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid var(--color-border);
+    }
+}
+
+.customer-form-item {
+    &:hover {
+        .event-actions {
+            opacity: 1;
+        }
+    }
+}
+
+.form-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-actions {
+    display: flex;
+    opacity: 0;
+    .copy-button, .remove-button {
+        width: 20px;
+    }
+    .remove-icon, .copy-icon {
+        width: 22px;
+    }
+}
+
+.attribute-line {
+    display: flex;
+    .remove-button {
+        opacity: 0;
+        .remove-icon {
+            width: 14px;
+        }
+    }
+    &:hover {
+        .remove-button {
+            opacity: 1;
+        }
+    }
+}
+.form-container {
+    display: flex;
+    gap: 20px;
+}
+.form-column {
+    display: flex;
+    margin-top: 16px;
+    &.attributes {
+        width: 100%;
+    }
+}
+
+.attributes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    .refine-button {
+        color: var(--color-blue);
+        font-size: 14px;
+        padding-left: 0;
+
+    }
+}
+
+
+.dropdown {
+    max-width: 180px;
+    width: 100%;
+}
+
+.add-button {
+    color: var(--color-blue);
+    font-size: 14px;
+}

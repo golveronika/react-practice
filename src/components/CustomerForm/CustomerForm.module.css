@@ -1,0 +1,31 @@
+.customer-form {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 20px;
+
+    .overlay {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;  
+    }
+
+    .error {
+        color: var(--color-red);
+    }
+
+    .form-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid var(--color-border);
+        padding-top: 20px;
+        margin-top: 20px;
+        .add-step-button {
+            color: var(--color-blue);
+            font-size: 14px;
+        }
+    }
+}

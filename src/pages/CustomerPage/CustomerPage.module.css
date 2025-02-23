@@ -1,0 +1,26 @@
+.customer-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 32px 16px;
+
+    .customer-page-content {
+        background-color: var(--color-gray);
+        padding: 20px;
+
+        .form-top-container {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+
+.discard {
+    color: var(--color-red);
+    font-size: 14px;
+}
